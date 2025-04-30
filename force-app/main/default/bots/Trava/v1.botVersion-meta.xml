@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>v1</fullName>
+    <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Hi there! 👋 I&apos;m Trava, your personal travel assistant from The TravelBlazers!
+
+I can help you book the perfect hotel or flight in just a few steps.
+To get started, could you please share:
+
+
+✈️ Your destination
+
+
+📅 Check-in and check-out dates
+
+
+🛏️ Room type or flight preferences
+
+
+👥 Number of travelers
+
+
+📝 Any special requests?
+
+
+Let’s plan your next adventure together! 🌍💼</message>
+                <messageIdentifier>cdf687f1-ed27-41e5-9fe0-fe7005e4df83</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>8700a25c-4cde-4201-9ac2-7be71076046b</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>e8979948-093d-42ad-b29e-a50bc707a88f</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Welcome</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Hi! I&apos;m your helpful bot.</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Sorry, it looks like something has gone wrong.</message>
+                <messageIdentifier>f120b7f0-f02d-4014-9efe-52b0d0b8defb</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>301a3e63-269a-494d-b45e-8c917e5e9ace</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>ed69e370-f374-406f-b13d-754acc47e2d8</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Error_Handling</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Unfortunately, a system error occurred. Let us start again.</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>One moment while I connect you to the next available service representative.</message>
+                <messageIdentifier>b79282cc-50b3-4345-9807-1ea7a2f646f9</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>282ab3f4-1656-4ab3-8fb8-5d03878e88c7</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <conversationSystemMessage>
+                <type>Transfer</type>
+            </conversationSystemMessage>
+            <stepIdentifier>199fc45f-c707-4e3d-96a7-df4ac7b25867</stepIdentifier>
+            <type>SystemMessage</type>
+        </botSteps>
+        <developerName>Transfer_To_Agent</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Transfer To Agent</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <citationsEnabled>false</citationsEnabled>
+    <company>TDX</company>
+    <conversationDefinitionPlanners>
+        <genAiPlannerName>Trava</genAiPlannerName>
+    </conversationDefinitionPlanners>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>This variable may also be referred to as VerifiedCustomerId</description>
+        <developerName>VerifiedCustomerId</developerName>
+        <includeInPrompt>false</includeInPrompt>
+        <label>VerifiedCustomerId</label>
+        <visibility>Internal</visibility>
+    </conversationVariables>
+    <entryDialog>Welcome</entryDialog>
+    <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
+    <intentV3Enabled>false</intentV3Enabled>
+    <knowledgeActionEnabled>false</knowledgeActionEnabled>
+    <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+    <role>Assist customers in hotel and flight bookings by collecting and processing their travel requirements.</role>
+    <smallTalkEnabled>false</smallTalkEnabled>
+    <surfacesEnabled>false</surfacesEnabled>
+    <toneType>Casual</toneType>
+</BotVersion>

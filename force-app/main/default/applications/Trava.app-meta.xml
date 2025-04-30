@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Trava</label>
+    <navType>Standard</navType>
+    <tabs>TDX_Asset__c</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>Booked_Date__c</tabs>
+    <tabs>standard-Order</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Trava_UtilityBar</utilityBar>
+</CustomApplication>
